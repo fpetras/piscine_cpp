@@ -6,7 +6,7 @@
 /*   By: fpetras <fpetras@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/02 04:59:54 by fpetras           #+#    #+#             */
-/*   Updated: 2018/06/02 09:09:34 by fpetras          ###   ########.fr       */
+/*   Updated: 2018/06/02 16:00:10 by fpetras          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,13 @@ armorDamageReduction_(3)
 ScavTrap::ScavTrap(std::string name) :
 hitPoints_(100),
 maxHitPoints_(100),
-energyPoints_(100),
-maxEnergyPoints_(100),
+energyPoints_(50),
+maxEnergyPoints_(50),
 level_(1),
 name_(name),
-meleeAttackDamage_(30),
-rangedAttackDamage_(20),
-armorDamageReduction_(5)
+meleeAttackDamage_(20),
+rangedAttackDamage_(15),
+armorDamageReduction_(3)
 {
 	std::cout << name << " approaches the lair ";
 	std::cout << "(Name constructor has been called)" << std::endl;
